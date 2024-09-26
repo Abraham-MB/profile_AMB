@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+html{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/022/916/296/non_2x/abstract-blue-neon-color-light-effect-horizontal-on-black-background-free-vector.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: orange;
+    margin-left: 10px;
+    padding-left: 865px;
+    
+    
+}
+
+
+img{
+    margin-left: 795px;
+    margin-top: 160px;
+
+}
+
+table{
+    margin-left: 600px;
+    border: antiquewhite;
+}
+
+p{
+    font-size: 30px;
+}
+
+th{
+    color: aqua;
+}
+td{
+    color: aquamarine;
+}
+
+a{
+    color: cadetblue;
+    margin-left: 890px;
+}
+p{
+    margin-left: 913px;
+}

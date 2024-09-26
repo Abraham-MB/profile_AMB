@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Targeta de perfil</title>
+    <link rel="stylesheet" href="perfil.css" >
+</head>
+<body>
+    <!--barra de navegacion-->
+    <nav class="navbar" >
+        <div class="menu-hamburger">
+        <ul id="menu" class="menu-list" >
+            <li><a href="#inicio" onclick="mostrarSeccion('inicio')">Acerca de mi</a></li>
+            <li><a href="#proyectos" onclick="mostrarSeccion('proyectos')">Proyectos</a></li>
+            <li><a href="#contactos" onclick="mostrarSeccion('contactos')">Contactame</a></li>
+        </ul>
+        
+    </nav>
+    <!--contenerdor principal-->
+    <div id="main-content">
+        <!--seccion principal-->
+        <div id="inicio"  class="section">
+            
+            <div class="profile-card">
+                <img src="img/3d-casual-life-cube-made-of-square-blocks.png" alt="Foto de perfil" class="profile_image">
+                <h2> Abraham Moncada Bonifacio</h2>
+                <p class="profile-description">Frontend Developer</p>
+                <div class="iconos-redes">
+                    <a href=""><img src="img/icons8-github-50.png" alt="Gtihub" class="icon"></a>
+                    <a href=""><img src="img/icons8-twitter-50.png" alt="x" class="icon"></a>
+                    <a href=""><img src="img/icons8-instagram-48.png" alt="instagram" class="icon"></a>
+            </div>
+                 
+            </div>
+            </div>
+            
+
+        </div>
+        <!--seccion de proyectos-->
+        <div id="proyectos" class="section" style="display: none;" >
+            <h2>Mis proyectos </h2>
+            <div class="proyectos_driv">
+                <div class="proyecto">
+                    <h1>proyecto 1</h1>
+                    <p>Descripcion del proyecto 1</p>
+                </div>
+                <div class="proyecto">
+                    <h2>proyecto 2</h2>
+                    <p>Descripcion del proyecto 2</p>
+                </div>
+                <div class="proyecto">
+                    <h3>proyecto 3</h3>
+                    <p>Descripcion del proyecto 3</p>
+                </div>
+            </div>
+        </div>
+        <!--seccion de contactos-->
+        <div id="contactos" class="section" style="display: none;">
+            <h2>contactame</h2>
+            <form>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre"  required>
+                
+                <label for="email">Email: </label>
+                <input type="email" id="email" required>
+
+                <label for="mensaje">Dejame un mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit" >Enviar</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function mostrarSeccion(seccion){
+            const secciones = document.querySelectorAll('.section')
+            secciones.forEach(function(sec){
+                sec.style.display= 'none';
+
+            });
+            document.getElementById(seccion).style.display= 'block';
+        }
+    
+
+
+    </script>
+
+
+
+</body>
+</html>
